@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!--
+    Metadados da página (tag <head>...</head>)
+    Essas tags influenciam diretamente na acessibilidade e na aceitação dos
+    mecanismos de busca.
+-->
+
+<head>
+    <!-- Esta página pode ser vista em qualquer navegador -->
+    <meta charset="UTF-8">
+    <!-- Esta página é responsiva -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Descrição desta página para mecanismos de busca e afins -->
+    <meta name="description" content="Site sobre o nosso bom e velho amigo desconhecido Joca da Silva.">
+    <!-- Palavras chave desta página para mecanismos de busca -->
+    <meta name="keywords" content="blog, pessoal, Joca, artigos, arvores, plantas, ecolologia, botânica">
+    <!-- Autor desta página -->
+    <meta name="author" content="André Luferat &lt;andre@luferat.net&gt;">
+    <!-- Carrega as folhas de estilo externas -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- Título exclusivo desta página -->
+    <title>Blog do Joca</title>
+</head>
+
+<body>
+    <!-- Âncora do topo da página -->
+    <a id="top"></a>
+
+    <!-- Elemento principal -->
+    <div id="wrap">
+
+        <!-- Cabeçalho da página -->
+        <header>
+
+            <!-- Logotipo -->
+            <a href="index.html"><img src="/img/cav1.jfif" alt="Logotipo do Blog do Joca"></a>
+
+            <!-- Título / nome e slogan do site -->
+            <h1>blog<small> Dos cavalos</small></h1>
+
+        </header>
+
+        <!--
+            Menu principal usando ícones do Font Awesome.
+            A classe "fa-fw" formata os ícones como "monospaced".
+        -->
+        <nav>
+            <a href="index.html" title="Página incial">
+                <i class="fa-solid fa-fw fa-house"></i>
+                <span>Início</span>
+            </a>
+            <a href="contacts.html" title="Faça contato">
+                <i class="fa-solid fa-fw fa-comment-dots"></i>
+                <span>Contatos</span>
+            </a>
+            <a href="about.html" title="Sobre">
+                <i class="fa-solid fa-fw fa-circle-info"></i>
+                <span>Sobre</span>
+            </a>
+        </nav>
+
+        <!-- Bloco principal (corpo da página) -->
+        <main>
+
+            <!-- Conteúdo principal -->
+            <article>
+                <h2>Faça Contato</h2>
+
+                <form action="" method="post" id="contactForm">
+                    <!-- Permite que o backend detecte o envio do formulário -->
+                    <input type="hidden" name="send" value="true">
+            
+                    <p>Preencha todos os campos abaixo parqa entrar em contato com o Joca.</p>
+            
+                    <p>
+                        <label for="name">Seu nome:</label>
+                        <input type="text" name="name" id="name" required minlength="3">
+                    </p>
+            
+                    <p>
+                        <label for="email">Seu e-mail:</label>
+                        <input type="email" name="email" id="email" required>
+                    </p>
+            
+                    <p>
+                        <label for="subject">Assunto:</label>
+                        <input type="text" name="subject" id="subject" required minlength="5">
+                    </p>
+            
+                    <p>
+                        <label for="message">Mensagem:</label>
+                        <textarea name="message" id="message" required minlength="5"></textarea>
+                    </p>
+            
+                    <p>
+                        <button type="submit">Enviar</button>
+                    </p>
+            
+                </form>
+            
+                <div id="feedback"></div>
+            
+              
+            </article>
+
+            <!-- Conteúdo complementar -->
+            <aside>
+
+                <h3>Conteúdo complementar</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum rerum recusandae neque ducimus.</p>
+
+            </aside>
+
+        </main>
+
+        <!-- Rodapé da página -->
+        <footer>
+            <!-- Link para a página inicial -->
+            <a href="index.html" title="Página inicial"><i class="fa-solid fa-fw fa-house"></i></a>
+
+            <!-- Mensagem de Copyright e privacidade -->
+            <div>
+                &copy; 2022 Joca da Silva
+                <small><a href="policies.html" title="Políticas de Privacidade">Políticas de Privacidade</a></small>
+            </div>
+
+            <!-- Link para o topo desta mesma página -->
+            <a href="#top" title="Topo da página"><i class="fa-solid fa-fw fa-circle-up"></i></a>
+        </footer>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="/index.js"></script>
+</body>
+
+</html>
